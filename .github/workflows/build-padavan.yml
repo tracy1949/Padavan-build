@@ -16,7 +16,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian 11
+    runs-on: Debian
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
