@@ -36,11 +36,11 @@ jobs:
       env:
         KERNEL: 4.4
       run: |
-        if [ $KERNEL = "4.4" ] ; then
+        #if [ $KERNEL = "4.4" ] ; then
         git clone --depth=1 https://github.com/MeIsReallyBa/padavan-4.4.git /opt/rt-n56u
-        else
+        #else
         #git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
-        fi
+        #fi
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
